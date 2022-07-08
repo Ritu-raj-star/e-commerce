@@ -8,9 +8,10 @@ import SignUp from "./Buttons/SignUp";
 export default function Header() {
   return (
     <>
+    <div className="container">
       <Navbar bg="light" expand="lg">
         <Container fluid>
-          <Navbar.Brand>E-Commerce</Navbar.Brand>
+          <img src="assets/logo.png" alt="logo"/><span className="logo"> e-commerce</span> 
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
@@ -35,6 +36,7 @@ export default function Header() {
           </Navbar.Collapse>
         </Container>
       </Navbar>
+    </div>
     </>
   );
 }
